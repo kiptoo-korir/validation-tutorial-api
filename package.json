@@ -1,0 +1,19 @@
+{
+  "name": "validation-tutorial",
+  "version": "1.0.0",
+  "description": "A project demonstrating how to utilize express-validator",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-validator": "^6.13.0"
+  }
+}
