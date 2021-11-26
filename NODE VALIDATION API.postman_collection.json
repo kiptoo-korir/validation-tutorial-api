@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "20245e3a-bb8e-4bc6-874c-f0091d7b071a",
+		"name": "NODE VALIDATION API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CREATE USER",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Elijah Korir",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "eko@test.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Test1234",
+							"type": "text"
+						},
+						{
+							"key": "confirmPassword",
+							"value": "Test123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/users/create-user",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"create-user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

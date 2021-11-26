@@ -28,6 +28,18 @@ function createUserValidationRules() {
       .withMessage(
         "Please ensure your password is at least 8 characters long, has at least one uppercase and lowercase letters."
       ),
+    check("confirmPassword")
+      .trim()
+      .escape()
+      .notEmpty()
+      .withMessage("Please confirm your password.")
+      .custom(
+        (confirmPassword, { req: request }) =>
+          confirmPassword === request.body.password
+      )
+      .withMessage(
+        "The password and its confirmation do not match, please input them correctly."
+      ),
   ];
 }
 
